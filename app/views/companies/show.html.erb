@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ein:</b>
+  <%= @company.ein %>
+</p>
+
+<p>
+  <b>Dba:</b>
+  <%= @company.dba %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @company.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @company.state %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @company.status %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @company.country %>
+</p>
+
+<p>
+  <b>Status desc:</b>
+  <%= @company.status_desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

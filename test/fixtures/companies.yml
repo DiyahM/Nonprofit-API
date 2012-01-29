@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ein: MyString
+  dba: MyString
+  city: MyString
+  state: MyString
+  status: MyString
+  country: MyString
+  status_desc: MyString
+
+two:
+  ein: MyString
+  dba: MyString
+  city: MyString
+  state: MyString
+  status: MyString
+  country: MyString
+  status_desc: MyString
