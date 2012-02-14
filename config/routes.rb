@@ -1,5 +1,13 @@
 Nonprofit::Application.routes.draw do
+  #get "pages/home"
+
+  #get "pages/about"
+
+  #get "pages/contact"
+
   resources :companies
+  
+  root :to => 'pages#home'
   
   match '/search', :to => 'search#index'
 

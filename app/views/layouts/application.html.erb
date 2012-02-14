@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nonprofit</title>
-  <%= stylesheet_link_tag    "application","http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <title>Nonprofit API</title>
+  <%= stylesheet_link_tag    "style_mod","application", :media => "all" %>
+  <%= javascript_include_tag "application", "libs/modernizr-2.5.2-respond-1.1.0.min.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body >
-<div class="container">
+	<div id="header-container">
+		<header class="wrapper clearfix">
+			<h1 id="title" style="color:white;font-size:48px;font-weight:bold;text-shadow: #EF5411 -3px -1px 0;">NONPROFIT API</h1>
+			<nav>
+				<ul>
+					<li><a href="/">About</a></li>
+					<li><a href="#nonprofits">Nonprofits</a></li>
+					<li><a href="#developers">Developers</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
+<div id="main-container" >
+	<div id="main" class="wrapper clearfix">
+	
 <%= yield %>
 </div>
+</div>
+<div id="footer-container">
+	
+<footer class="wrapper" >
+
+		Nonprofit API is a project created by <a href="http://twitter.com/hadiyahdotme">Hadiyah Mujhid</a> with a passion for nonprofits and technology. If you're interested in collaborating on this project, please contact me.
+		
+		</footer>
 
 </body>
 </html>
