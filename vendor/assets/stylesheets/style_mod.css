@@ -89,7 +89,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 #footer-container{ /*border-top:    20px solid #e44d26; */}
 #main aside      { border-top:    20px solid #e44d26; }
 
-#header-container {background:#FF6D1F;}
+#header-container {background:#FFF;}
 #footer-container,
 #main aside{
 	background:#A0E0EF;
@@ -107,7 +107,7 @@ nav a{
 	padding:15px 0;
 
 	/*background:#333;*/
-	color:white;
+	color:#333;
 
 	text-align:center;
 	text-decoration:none;
@@ -115,13 +115,13 @@ nav a{
 }
 
 nav a:visited{
-	color:white;
-	background:#FF6D1F;
+	color:#333;
+	/*background:#FF6D1F;*/
 }
 
 nav a:hover{
-	color:#A0E0EF;
-	background:#FF6D1F;
+	color:#333;
+	background:#FFF;
 	
 }
 

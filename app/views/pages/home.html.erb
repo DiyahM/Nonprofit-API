@@ -1,70 +1,9 @@
+
+<center> <%= image_tag 'How_it_works.jpeg', :width => '85%' %></center>
 <div class ="page-header">
-<h1>Open Nonprofit Data</h1>
+<h1>Making electronic donations easy for Nonprofits and Developers</h1>
 </div>
-	<p style="font-size:17px;padding-top:8px;line-height:28px;">The Nonprofit API is an project that provides developer access to available nonprofit information through an application programming interface (API). It also provides information for developers to build applications that allow for electronic donations to nonprofits. This is achieved thanks to platforms such as <%= link_to 'Paypal', 'http://www.paypal.com' %> and <%= link_to 'Dwolla', 'http://www.dwolla.com' %>. The heart of this project is to make it easy for developers to build applications that benefit nonprofits. 
-	</p>
-	<div id='nonprofits'style="padding-top:10px;">
-	<h1 >Nonprofits</h1>
-	
-	<p style="font-size:17px;padding-top:8px;line-height:28px;">
-	Wikipedia defines an API as: "An application programming interface (API) is the interface that a computer system, library, or application provides in order to allow requests for services to be made of it by other computer programs, and/or allow data to be exchanged between them." The Nonprofit API creates a directory of nonprofits and information needed to send electronic donations to the nonprofit (for nonprofits who use Dwolla and/or Paypal). When using platforms such as Dwolla and Paypal, your account information is kept safely with Dwolla and/or Paypal. The Nonprofit API will only provide your email address to developers to allow donations electronically. Email addresses provided will be verified before inclusion in the api. </p>
-	<div style="background:#E0FFFF;padding:10px;border-radius:6px;">
-	<h3>Get Started</h3> 
-	<ol >
-		<li> Sign up for <%= link_to 'Dwolla', 'https://www.dwolla.com/register'%> or <%= link_to 'Paypal', 'https://merchant.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=merchant/donations'%> </li>
-		<li> Register your nonprofit with our api </li>
-		<li> Collect electronic donations through developer built web and mobile applications </li>
-	</ol>
-	</div>
-	<h4> More Information for Nonprofits</h4>
-	<ul>
-		<li> <%= link_to 'Nonprofit Technology Network Report: How Open APIs Can Change How Nonprofits Manage Data', 'https://docs.google.com/spreadsheet/viewform?formkey=dGh2SnYxcU5xOEg1M1AzMl9VaUFQQnc6MQ' %></li>
-		<li><%= link_to 'Blog post citing example of Dwolla benefits to Nonprofits', 'http://blog.dwolla.com/iowa-non-profits-maximize-your-donations-and-start-with-10-on-us/'%> </li>
-		<li> Need more info, <%= link_to 'Contact Us', 'https://docs.google.com/spreadsheet/viewform?formkey=dGh2SnYxcU5xOEg1M1AzMl9VaUFQQnc6MQ' %></li>
-	</ul>
-	</div>
-	
-	<div id='developers' style="padding-top:10px;">
-		
-	<h1 >Developers</h1>
-	
-	
-	<h2 style='padding-top:8px;'>IRS Publication 78 API</h2>
-	<p style="font-size:17px;line-height:28px;">
-	
-	
-	Publication 78 is a list of organizations eligible to receive tax-deductible charitable organizations. Publication 78 is available as a text file from the IRS website found <a href="http://apps.irs.gov/app/eos/forwardToPub78Download.do">here.</a> Or you can manually search the list on the IRS site <a href="http://apps.irs.gov/app/eos/mainSearch.do;jsessionid=pVPtPmyGQ7yC2b5lLwvlKY215lC1RVnt11C9dlPZblCdv2sxz8Tm!2060255790?mainSearchChoice=pub78&dispatchMethod=selectSearch">here.</a> The Publication 78 is updated on a monthly basis. Nonprofit API has created an REST api for access to Publication 78 which returns the results in a JSON format. The api is hosted on <a href="https://github.com/DiyahM/Nonprofit-API">Github</a> with documentation for use. The database is seeded monthly with information from Publication 78. As electronic donation information is provided by nonprofits, that information will be included in the api as well. Electronic donation information will include email address to send donations via Dwolla or Paypal. It will also include physical addresses to mail donations, and website links. Electronic donation information will be verified with Dwolla and Paypal before inclusion in api.
-	</p>
-	<div style="background-color:white;font-size:17px;padding:30px;line-height:28px;border:1px solid #333;">
-	<!--API documentation start-->
-	<h2>GET search</h2>
-	Returns available nonprofit information that match a specified query.
-	<p style="font-size:17px;padding-top:8px;line-height:28px;">
-	<h5>Resource URL</h5>
-	
-	http://nonprofitapi.org/search.json
+
+	<p style="font-size:17px;padding-top:8px;line-height:28px;">The Nonprofit API was created as a platform to ease the process of electronic donations. The cost of sending money electronically is becoming more and more affordable. However, nonprofits are still paying huge fees to accept donations both on and offline. In addition, a central location to lookup nonprofits and how to donate is not freely available. The current system of how nonprofits accept donations is often costly and limiting. This takes away from dollars that could be used for a nonprofits impact mission. With the help of Nonprofit API, nonprofits can increase their fundraising efforts and at the same time save on costs. This is done through the use of an API, Application Programming Interface. App builders who want to build applications with a built-in charitable cause can use Nonprofit API to obtain information on relevant nonprofits, including electronic donation information. 
 	</p>
 	
-
-	<h5>Parameters</h5>
-	<p style="font-size:17px;padding-top:8px;line-height:28px;">
-		A minimum of one parameter is required. Parameters should be URL encoded.
-		</p>
-	<dl>
-	<dt>dba</dt> <dd>Doing Business As. Returns nonprofit organizations with a name similar to the given parameter value.<dd>
-
-	<dt>ein</dt> <dd>Employer ID Number. Returns nonprofit organization that match the given parameter value.</dd>
-
-	<dt>city</dt> <dd>Returns nonprofit organizations that are registered in the city parameter value.</dd> 
-
-	<dt>state</dt> <dd>Returns nonprofit organizations that are registered in the state parameter value. Parameter value must match the two letter state code.</dd>
-
-	<dt>page</dt> <dd>Must be used with other query parameters. Returns the paged nonprofit organizations. Defaults to first page if not included. Each request returns a max of 50 results per page.</dd>
-	</dl>
-	
-
-	<h5>Example Request</h5>
-	<strong>GET</strong> <a href="http://nonprofitapi.org/search.json?city=San+Francisco&state=CA">http://nonprofitapi.org/search.json?city=San+Francisco&state=CA</a><br> Returns all nonprofit organizations registered in San Francisco, CA
-	<!--API documentation end-->
-	</div>
-	</div>
