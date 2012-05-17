@@ -16,3 +16,4 @@
 
 #ignore env vars
 /config/env_vars.rb
+bin
