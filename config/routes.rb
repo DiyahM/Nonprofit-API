@@ -3,6 +3,12 @@ Nonprofit::Application.routes.draw do
   #omniauth
   match "/auth/:provider/callback" => "sessions#create"
   match "signout" => "sessions#destroy", :as => :signout
+
+  resources :companies do
+    collection do
+      get :search
+    end
+  end
  
   root :to => 'pages#home'
   get 'pages/loggedin'

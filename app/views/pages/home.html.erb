@@ -7,6 +7,12 @@
 <%= button_to 'Connect with Dwolla', '/auth/dwolla', :method => "get" %>
 <%= button_to 'Connect with Paypal', '/auth/paypal', :method => "get" %>
 
+<%= form_tag search_companies_url, method: :get do %>
+  <%= label_tag :q, "Search" %>
+  <%= search_field_tag :q %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
 <h3>For Developers</h3>
 
 

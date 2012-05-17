@@ -1,4 +1,14 @@
+require 'open-uri'
+
 class CompaniesController < ApplicationController
+  def search
+    @results = []
+    doc = Nokogiri::XML(open("http://www.charitynavigator.org/feeds/search7/?appid=#{ENV['CN_KEY']}&keyword=#{params[:q]}"))
+    doc.css("charity_name").each do |charity|
+      @results << charity.content
+    end
+  end
+
   # GET /companies
   # GET /companies.json
   

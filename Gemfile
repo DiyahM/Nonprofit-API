@@ -19,6 +19,12 @@ gem 'pg'
 
 group :development, :test do
   gem "rspec-rails", "~> 2.0"
+  gem "guard"
+  gem "guard-rspec"
+  gem "guard-bundler"
+  gem "turnip"
+  gem "capybara"
+  gem 'fakeweb'
 end
 
 

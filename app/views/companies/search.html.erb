@@ -1,0 +1,9 @@
+<h2>
+  Companies matching <%= params[:q] %>
+</h2>
+
+<ul>
+  <% @results.each do |company| %>
+    <li><%= company %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,142 @@
+<resultset fromrec="1" torec="10" total="10">
+  <charity>
+    <orgid>4047</orgid>
+    <charity_name>Marine Toys for Tots Foundation</charity_name>
+    <city>Triangle</city>
+    <state>VA</state>
+    <category>Human Services</category>
+    <cause>Children's and Family Services</cause>
+    <tag_line>
+      Motivating needy children to grow into responsible, productive, patriotic citizens and community leaders
+    </tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=4047
+    </url>
+    <ein>203021444</ein>
+  </charity>
+  <charity>
+    <orgid>9379</orgid>
+    <charity_name>Federation of Protestant Welfare Agencies</charity_name>
+    <city>New York</city>
+    <state>NY</state>
+    <category>Human Services</category>
+    <cause>Social Services</cause>
+    <tag_line>Helping New Yorkers in need since 1922</tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=9379
+    </url>
+    <ein>135562220</ein>
+  </charity>
+  <charity>
+    <orgid>12224</orgid>
+    <charity_name>The Empty Stocking Fund</charity_name>
+    <city>Atlanta</city>
+    <state>GA</state>
+    <category>Human Services</category>
+    <cause>Children's and Family Services</cause>
+    <tag_line>Giving joy since 1927</tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=12224
+    </url>
+    <ein>237159125</ein>
+  </charity>
+  <charity>
+    <orgid>10235</orgid>
+    <charity_name>Mustard Seed of Central Florida</charity_name>
+    <city>Orlando</city>
+    <state>FL</state>
+    <category>Human Services</category>
+    <cause>Social Services</cause>
+    <tag_line>A new beginning</tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=10235
+    </url>
+    <ein>592906383</ein>
+  </charity>
+  <charity>
+    <orgid>5992</orgid>
+    <charity_name>Museum of the City of New York</charity_name>
+    <city>New York</city>
+    <state>NY</state>
+    <category>Arts, Culture, Humanities</category>
+    <cause>Museums</cause>
+    <tag_line>
+      Exploring the past, present and future of New York City
+    </tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=5992
+    </url>
+    <ein>131624098</ein>
+  </charity>
+  <charity>
+    <orgid>3487</orgid>
+    <charity_name>Children's Hunger Fund</charity_name>
+    <city>Sylmar</city>
+    <state>CA</state>
+    <category>International</category>
+    <cause>Humanitarian Relief Supplies</cause>
+    <tag_line>
+      Serving children in need across America and around the world
+    </tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=3487
+    </url>
+    <ein>954335462</ein>
+  </charity>
+  <charity>
+    <orgid>4047</orgid>
+    <charity_name>Marine Toys for Tots Foundation</charity_name>
+    <city>Triangle</city>
+    <state>VA</state>
+    <category>Human Services</category>
+    <cause>Children's and Family Services</cause>
+    <tag_line>
+      Motivating needy children to grow into responsible, productive, patriotic citizens and community leaders
+    </tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=4047
+    </url>
+    <ein>203021444</ein>
+  </charity>
+  <charity>
+    <orgid>8323</orgid>
+    <charity_name>Samaritan House</charity_name>
+    <city>San Mateo</city>
+    <state>CA</state>
+    <category>Human Services</category>
+    <cause>Social Services</cause>
+    <tag_line>Neighbor helping neighbor</tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=8323
+    </url>
+    <ein>237416272</ein>
+  </charity>
+  <charity>
+    <orgid>10704</orgid>
+    <charity_name>Assistance League of Austin</charity_name>
+    <city>Austin</city>
+    <state>TX</state>
+    <category>Human Services</category>
+    <cause>Social Services</cause>
+    <tag_line>
+      Providing direct services to children and adults in Greater Austin
+    </tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=10704
+    </url>
+    <ein>237307276</ein>
+  </charity>
+  <charity>
+    <orgid>7662</orgid>
+    <charity_name>Magic Johnson Foundation</charity_name>
+    <city>Beverly Hills</city>
+    <state>CA</state>
+    <category>Health</category>
+    <cause>Diseases, Disorders, and Disciplines</cause>
+    <tag_line>We are the communities we serve</tag_line>
+    <url>
+      http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=7662
+    </url>
+    <ein>954349860</ein>
+  </charity>
+</resultset>
