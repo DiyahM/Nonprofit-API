@@ -1,15 +1,12 @@
 Nonprofit::Application.routes.draw do
-  #get "pages/home"
-
-  #get "pages/about"
-
-  #get "pages/contact"
-
-  resources :companies
   
+  #omniauth
+  match "/auth/:provider/callback" => "sessions#create"
+  match "signout" => "sessions#destroy", :as => :signout
+ 
   root :to => 'pages#home'
+  get 'pages/loggedin'
   
-  match '/search', :to => 'search#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

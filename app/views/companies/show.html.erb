@@ -35,6 +35,4 @@
   <%= @company.status_desc %>
 </p>
 
-
-<%= link_to 'Edit', edit_company_path(@company) %> |
-<%= link_to 'Back', companies_path %>
+Are you a managing agent for this nonprofit? If so, claim this nonprofit and provide information to allow for electronic donations. Register by linking your <%= link_to 'Paypal', '/auth/paypal?origin=' + @company.ein  %> and/or Dwolla accounts. Verification will be performed on all linked accounts.

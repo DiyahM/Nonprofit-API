@@ -1,8 +1,14 @@
 
-<center> <%= image_tag 'How_it_works.jpeg', :width => '85%' %></center>
+
 <div class ="page-header">
 <h1>Making electronic donations easy for Nonprofits and Developers</h1>
 </div>
+<h3>For Nonprofits</h3>
+<%= button_to 'Connect with Dwolla', '/auth/dwolla', :method => "get" %>
+<%= button_to 'Connect with Paypal', '/auth/paypal', :method => "get" %>
+
+<h3>For Developers</h3>
+
 
 	<p style="font-size:17px;padding-top:8px;line-height:28px;">The Nonprofit API was created as a platform to ease the process of electronic donations. The cost of sending money electronically is becoming more and more affordable. However, nonprofits are still paying huge fees to accept donations both on and offline. In addition, a central location to lookup nonprofits and how to donate is not freely available. The current system of how nonprofits accept donations is often costly and limiting. This takes away from dollars that could be used for a nonprofits impact mission. With the help of Nonprofit API, nonprofits can increase their fundraising efforts and at the same time save on costs. This is done through the use of an API, Application Programming Interface. App builders who want to build applications with a built-in charitable cause can use Nonprofit API to obtain information on relevant nonprofits, including electronic donation information. 
 	</p>

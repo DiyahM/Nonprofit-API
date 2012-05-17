@@ -1,3 +1,16 @@
+GIT
+  remote: git://github.com/ctran/annotate_models.git
+  revision: 18cd39ad01829deba5aa34634b8540d6675ab978
+  specs:
+    annotate (2.4.1.beta1)
+
+GIT
+  remote: git://github.com/surferdwa/omniauth-paypal.git
+  revision: 236080c76254cdb7697cb9711f2f2ffc30c6a605
+  specs:
+    omniauth-paypal (0.0.3)
+      omniauth-oauth2 (~> 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +43,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.6)
     arel (3.0.0)
+    bcrypt-ruby (3.0.1)
     builder (3.0.0)
     coffee-rails (3.2.1)
       coffee-script (>= 2.2.0)
@@ -39,10 +53,19 @@ GEM
       execjs
     coffee-script-source (1.2.0)
     daemons (1.1.6)
+    diff-lcs (1.1.2)
+    dwolla (0.0.13)
+      jeffersongirao_faraday-stack (= 0.1.5)
+      multi_json (~> 1.0)
     erubis (2.7.0)
     eventmachine (0.12.10)
     execjs (1.3.0)
       multi_json (~> 1.0)
+    faraday (0.7.6)
+      addressable (~> 2.2)
+      multipart-post (~> 1.1)
+      rack (~> 1.1)
+    hashie (1.2.0)
     heroku (2.19.1)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
@@ -50,6 +73,8 @@ GEM
       term-ansicolor (~> 1.0.5)
     hike (1.2.1)
     i18n (0.6.0)
+    jeffersongirao_faraday-stack (0.1.5)
+      faraday (>= 0.6, < 0.8)
     journey (1.0.1)
     jquery-rails (2.0.0)
       railties (>= 3.2.0.beta, < 5.0)
@@ -63,6 +88,22 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    multipart-post (1.1.5)
+    oauth2 (0.5.2)
+      faraday (~> 0.7)
+      multi_json (~> 1.0)
+    omniauth (1.0.2)
+      hashie (~> 1.2)
+      rack
+    omniauth-dwolla (0.0.13)
+      dwolla (>= 0.0.13)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.0)
+    omniauth-identity (1.0.0)
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.0.0)
+      oauth2 (~> 0.5.0)
+      omniauth (~> 1.0)
     pg (0.12.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -92,6 +133,19 @@ GEM
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.4)
+    rspec-expectations (2.6.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.6.0)
+    rspec-rails (2.6.1)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.6.0)
     rubyzip (0.9.5)
     sass (3.1.12)
     sass-rails (3.2.3)
@@ -122,11 +176,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate!
+  bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   heroku
   jquery-rails
+  omniauth
+  omniauth-dwolla
+  omniauth-identity
+  omniauth-paypal!
   pg
   rails (= 3.2.0)
+  rspec-rails (~> 2.0)
   sass-rails (~> 3.2.3)
   thin
   uglifier (>= 1.0.3)

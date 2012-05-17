@@ -5,13 +5,21 @@ gem 'will_paginate', '~> 3.0.2'
 gem 'heroku'
 gem 'thin'
 
+gem 'omniauth'
+gem 'omniauth-paypal', :git => 'git://github.com/surferdwa/omniauth-paypal.git'
+gem 'omniauth-dwolla'
+gem 'omniauth-identity'
+
+gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'pg'
 
-  gem 'pg'
-
-
+group :development, :test do
+  gem "rspec-rails", "~> 2.0"
+end
 
 
 # Gems used only for assets and not required
@@ -29,7 +37,7 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
