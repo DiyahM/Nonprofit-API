@@ -1,33 +1,4 @@
-==Nonprofit API
+==Nonprofit API http://nonprofitapi.com
 Nonprofit API is an project to provide developer access to available nonprofit information including electronic donation information. The intent of the project to build applications that benefit nonprofits.
 
-==IRS Publication 78
-Publication 78 is a list of organizations eligible to receive tax-deductible charitable organizations. Publication 78 is available as a text file from the IRS website. Or you can manually search the list on the IRS site. The Publication 78 is updated on a monthly basis.
-
-==IRS Publication 78 API
-Nonprofit API is currently an REST api for access to Publication 78 which returns the results in a JSON format. Currently, working on including email address to use for electronic donations via Dwolla and PayPal
-
-GET search
-Returns available nonprofit information that match a specified query.
-
-Resource URL
-http://nonprofitapi.org/search.json
-
-Parameters - A minimum of one parameter is required. Parameters should be URL encoded.
-dba - Doing Business As. Returns nonprofit organizations with a name similar to the given parameter value.
-
-ein - Employer ID Number. Returns nonprofit organization that match the given parameter value.
-
-city - Returns nonprofit organizations that are registered in the city parameter value. 
-
-state - Returns nonprofit organizations that are registered in the state parameter value. Parameter value must match the two letter state code.
-
-page - Must be used with other query parameters. Returns the paged nonprofit organizations. Defaults to first page if not included. Each request returns a max of 50 results per page.
-
-==Example Request
-GET http://nonprofitapi.org/search.json?city=San+Francisco&state=CA Returns all nonprofit organizations registered in San Francisco, CA
-
-==TO DO
-* Add supplemental data table (includes website, dwolla email address, paypal email address, link to logo, phone number)
-* Dwolla Integration (authenticate and verify email belongs to nonprofit)
 
