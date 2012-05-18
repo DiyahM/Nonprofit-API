@@ -3,7 +3,11 @@
 </h2>
 
 <ul>
-  <% @results.each do |company| %>
-    <li><%= company %></li>
+  <% @companies.each do |company| %>
+    <li><strong><%= company.charity_name %></strong><br>
+        EIN: <%= company.ein %><br>
+        <%= company.city %>, <%= company.state%> <br>
+        Causes: <%= company.cause %><br>
+        <%= link_to company.url, company.url %><br></li>
   <% end %>
 </ul>

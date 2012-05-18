@@ -13,19 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20120517183337) do
 
-  create_table "companies", :force => true do |t|
-    t.string   "ein"
-    t.string   "dba"
-    t.string   "city"
-    t.string   "state"
-    t.string   "status"
-    t.string   "country"
-    t.string   "status_desc"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.integer  "cn_id"
-  end
-
   create_table "identities", :force => true do |t|
     t.string   "name"
     t.string   "email"

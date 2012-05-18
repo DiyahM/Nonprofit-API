@@ -1,28 +1,35 @@
 require 'open-uri'
 
 class CompaniesController < ApplicationController
+  
   def search
-    @results = []
+    @companies = []
     doc = Nokogiri::XML(open("http://www.charitynavigator.org/feeds/search7/?appid=#{ENV['CN_KEY']}&keyword=#{params[:q]}"))
-    doc.css("charity_name").each do |charity|
-      @results << charity.content
+    doc.css("charity").each do |charity|
+      c = Company.new
+      c.orgid = charity.css('orgid').text
+      c.charity_name = charity.css('charity_name').text
+      c.city = charity.css('city').text
+      c.state = charity.css('state').text
+      c.category = charity.css('category').text
+      c.cause = charity.css('cause').text
+      c.tag_line = charity.css('tag_line').text
+      c.url = charity.css('url').text
+      c.ein = charity.css('ein').text 
+      @companies << c
     end
+     return @companies
   end
 
   # GET /companies
   # GET /companies.json
   
   def show
-    @company = Company.find_by_ein(params[:ein])
+    
   end
   
   def index
-    @companies = Company.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @companies }
-    end
+   
   end
 
  
@@ -30,60 +37,29 @@ class CompaniesController < ApplicationController
   # GET /companies/new
   # GET /companies/new.json
   def new
-    @company = Company.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @company }
-    end
+   
   end
 
   # GET /companies/1/edit
   def edit
-    @company = Company.find(params[:id])
+   
   end
 
   # POST /companies
   # POST /companies.json
   def create
-    @company = Company.new(params[:company])
-
-    respond_to do |format|
-      if @company.save
-        format.html { redirect_to @company, notice: 'Company was successfully created.' }
-        format.json { render json: @company, status: :created, location: @company }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @company.errors, status: :unprocessable_entity }
-      end
-    end
+  
   end
 
   # PUT /companies/1
   # PUT /companies/1.json
   def update
-    @company = Company.find(params[:id])
-
-    respond_to do |format|
-      if @company.update_attributes(params[:company])
-        format.html { redirect_to @company, notice: 'Company was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @company.errors, status: :unprocessable_entity }
-      end
-    end
+   
   end
 
   # DELETE /companies/1
   # DELETE /companies/1.json
   def destroy
-    @company = Company.find(params[:id])
-    @company.destroy
-
-    respond_to do |format|
-      format.html { redirect_to companies_url }
-      format.json { head :no_content }
-    end
+  
   end
 end
